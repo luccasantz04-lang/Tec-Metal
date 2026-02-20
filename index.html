@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TEC-METAL Estruturas em Geral</title>
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0d1b2a;
+    color: white;
+}
+
+header {
+    padding: 0;
+    margin: 0;
+}
+
+.banner-logo {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.servicos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: #1b263b;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+}
+
+.card h3 {
+    color: gold;
+}
+
+.botao {
+    background: gold;
+    color: black;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+footer {
+    background: #001f3f;
+    text-align: center;
+    padding: 20px;
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 70px;
+    height: 70px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    z-index: 1000;
+    animation: pulse 2s infinite;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-button img {
+    width: 40px;
+    height: 40px;
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.4);
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6);
+    }
+    70% {
+        box-shadow: 0 0 0 20px rgba(37, 211, 102, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
+
+.galeria {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #1b263b;
+}
+
+.galeria h2 {
+    color: gold;
+    margin-bottom: 40px;
+}
+
+.grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.grid-galeria img {
+    width: 100%;
+    border-radius: 12px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+}
+
+.grid-galeria img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+</style>
+</head>
+<body>
+
+<header>
+    <img src="tec-metal.jpg" alt="TEC-METAL Logo" class="banner-logo">
+</header>
+
+<section>
+    <h2>Nossos Serviços</h2>
+    <div class="servicos">
+        <div class="card">
+            <h3>Galpões Metálicos</h3>
+            <p>Estrutura reforçada e montagem profissional.</p>
+        </div>
+
+        <div class="card">
+            <h3>Escadas Metálicas</h3>
+            <p>Projetos sob medida com acabamento de qualidade.</p>
+        </div>
+
+        <div class="card">
+            <h3>Estruturas Personalizadas</h3>
+            <p>Soluções resistentes e seguras para sua obra.</p>
+        </div>
+    </div>
+</section>
+
+<a href="https://wa.me/5562993147750" 
+   class="whatsapp-button" 
+   target="_blank">
+   <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" 
+        alt="WhatsApp">
+</a>
+
+<section class="galeria">
+    <h2>Projetos Realizados</h2>
+    <div class="grid-galeria">
+        <img src="galpao1.jpg" alt="Galpão metálico 1">
+        <img src="galpao2.jpg" alt="Galpão metálico 2">
+        <img src="galpao3.jpg" alt="Galpão metálico 3">
+        <img src="galpao4.jpg" alt="Galpão metálico 4">
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 TEC-METAL Estruturas em Geral</p>
+</footer>
+
+</body>
+</html>
